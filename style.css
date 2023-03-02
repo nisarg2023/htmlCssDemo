@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+a{
+    text-decoration: none;
+}
+hr
+{
+    border-color: #b1bccc;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 -32px; 
+    flex-wrap: wrap;
+  
+}
+.container{
+    width:1170px;
+    margin: 0 auto;
+    padding: 0 16px;
+    /* background-color: aqua; */
+
+}
+
+.header{
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.divHeader{
+    display: flex;
+    padding: 0 7rem;
+}
+.logo{
+    margin: auto;
+}
+.headerRight{
+    display: flex;
+    align-items: center;
+}
+.headerRight nav{
+    padding-left: 30rem;
+}
+.headerRight ul{
+    display: flex;
+}
+.headerRight  li{
+    list-style-type: none;
+}
+.headerRight a{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 18px;
+    color:#183B56;
+    font-style: normal;
+    font-weight: 650;
+    font-size: 18px;
+  
+}
+.headerRight li span{
+    margin-left: 0.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.headerRight .button a
+{
+    border: 2px solid #1565D8;
+    color: #1565D8;   
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.heroSection{
+    display: flex;
+}
+
+.divRight{
+    padding: 80px;
+}
+.heading h1{
+    margin-top: 1.5rem;
+    font-size: 60px;
+    color: #183B56;
+}
+.paragraph p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #183B56;
+}
+.itemContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem ;
+}
+.item
+{
+    width:300px;
+    display: flex;
+    padding-top:1rem;
+}
+
+.item label{
+    color: #183B56;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+.item p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #5A7184;
+}
+
+.item .icon{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    height: 50px;
+    width: 50.33px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+.item i{
+    color:#1565D8;
+}
+
+.divRight .button {
+    color: white;
+    background-color: #1565D8;
+    border-radius: 5px;
+    width:fit-content ;
+    font-size: 18px;
+    padding: 0.8rem;
+    margin-top:3rem
+    
+}
+.divRight .button a{
+    color: white;
+}
+
+.ourService
+{
+    margin-top:5rem;
+    display: grid;
+    justify-content: center;
+    
+}
+
+
+.heading2{
+    margin-top: 1rem;
+    font-size: 40px;
+    color: #183B56; 
+}
+
+.Paragraph{
+    font-family: 'Open Sans';
+    font-style: normal;
+    margin: 1rem auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #5A7184;
+    width:50%;
+    text-align: center;
+}
+
+.check{
+
+    display: flex;
+    margin: 1rem auto;
+    justify-content: space-around;
+    width: 80%;
+}
+.check p{
+    display: block;
+    font-size: 18px;
+}
+.check span{
+    color: rgb(7, 228, 154);
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cardContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around  ;
+    
+}
+.card
+{
+    margin: 0px 16px; 
+    width: 18rem;
+    height: 22rem;
+    padding: 0 32px;
+    margin-top: 2rem;
+    border: 1px solid #b1bccc;
+    border-radius: 12px;
+}
+.cardImage{
+    
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 2.5rem 0rem;
+    border-radius: 10px;
+    border: 1px solid #b1bccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1565D8;
+}
+.cardTitle{
+    font-size: 30px;
+    color: #183B56;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.cardParagraph{
+    font-size: 22px;
+    color: #5A7184;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+.cardLink{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    
+}
+.cardLink a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.quote{
+margin-top: 5rem;
+}
+.divBackground{
+    background-color: pink;
+    height: 550px;
+    border: 2px solid pink;
+    border-radius: 0% 0% 60% 60%/0% 0% 20% 20%;
+}
+.divQuote{
+    width: 37rem;
+    height: 26rem;
+    background-color: azure;
+    border: 2px solid azure;
+    border-radius: 25px;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.quotSign{
+    color: aquamarine;
+}
+.quoteParagraph{
+    font-size: 35px;
+    color: #5A7184;
+    margin-top: 1rem;
+    font-weight: 400;
+
+}
+.quoteUser{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.quoteUser label{
+    font-size: 20px;
+    color: #183B56;
+    font-weight: 500;
+    margin-right: 3rem;
+}
+
+.quoteUser p{
+    font-size: 20px;
+    color: #5A7184;
+    font-weight: 400;
+}
+.quoteUser span{
+    color: rgb(7, 228, 154);;
+}
+.yourBenefite
+{
+    margin-top: 3rem;
+}
+.OurTipsImage{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;;
+}
+.testimonials{
+    margin-top: 3rem;
+}
+.testimonialsCard{
+    width: 20%;
+    margin: 1rem 0rem;
+    padding: 1rem 0.5rem;
+}
+.star{
+    display: flex;
+    
+}
+.star img{
+    margin: 1rem 0.1rem;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+.user{
+    display: flex;
+    padding-top : 1rem;
+}
+.userImage img{
+    height: 2.7rem;
+    width: 2.7rem;
+    margin-right: 1rem;
+}
+
+.userName label{
+    font-size: 20px;
+     color: #183B56;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+.userName p{
+    
+    font-size: 16px;
+    color: #5A7184;
+    font-weight: 400;
+}
+.userName span {
+    color: rgb(7, 228, 154);
+    margin-right: 0.5rem;
+}
+
+.OurTipsImage div{
+    color: white;
+    display: flex;
+    font-size: 45px;
+    font-weight: 600;
+    align-items: flex-end;
+    
+}
+.OurTipsImage p{
+    padding: 0 2rem;
+}
