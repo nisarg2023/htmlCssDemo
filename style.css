@@ -6,15 +6,18 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 hr
 {
     border-color: #b1bccc;
 }
+
 .row
 {
     display: flex;
-    justify-content: center;
-    margin: 0 -32px; 
+    margin: 0 -16px; 
     flex-wrap: wrap;
   
 }
@@ -22,30 +25,34 @@ hr
     width:1170px;
     margin: 0 auto;
     padding: 0 16px;
+    border: 1px solid red
     /* background-color: aqua; */
 
 }
-
 .header{
     background-color: whitesmoke;
-    padding: 10px 20px;
+    padding: 10px 0px;
     height: 40px;
     display: flex;
     align-items: center;
 }
 .divHeader{
     display: flex;
-    padding: 0 7rem;
+    justify-content: space-between;
+    padding: 0 16px;
+    width:100%;
+    align-items: center;
+    /* padding: 0 7rem; */
 }
 .logo{
-    margin: auto;
+    /* margin: auto; */
 }
 .headerRight{
     display: flex;
     align-items: center;
 }
 .headerRight nav{
-    padding-left: 30rem;
+    /* padding-left: 30rem; */
 }
 .headerRight ul{
     display: flex;
@@ -75,12 +82,14 @@ hr
     border: 2px solid #1565D8;
     color: #1565D8;   
     padding: 0.5rem;
+     margin-right: 0rem; 
     border-radius: 8px;
     width: max-content;
 }
 
 .heroSection{
     display: flex;
+    justify-content: center;
 }
 
 .divRight{
@@ -99,18 +108,20 @@ hr
     color: #183B56;
 }
 .itemContainer{
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 1rem ;
 }
-.item
+.itemCol
 {
-    width:300px;
+     width:50%; 
+}
+.itemcard
+{
+    margin: 10px 16px;
     display: flex;
-    padding-top:1rem;
+    align-items: center;
 }
 
-.item label{
+.itemcard label{
     color: #183B56;
     font-style: normal;
     font-weight: 700;
@@ -118,7 +129,7 @@ hr
     line-height: 22px;
 
 }
-.item p{
+.itemcard p{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -126,7 +137,7 @@ hr
     color: #5A7184;
 }
 
-.item .icon{
+.itemcard .icon{
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -136,7 +147,7 @@ hr
     border-radius: 5px;
     margin-right: 16px;
 }
-.item i{
+.itemcard i{
     color:#1565D8;
 }
 
@@ -156,21 +167,18 @@ hr
 
 .ourService
 {
-    margin-top:5rem;
-    display: grid;
-    justify-content: center;
-    
+    margin-top:5rem; 
 }
 
 
 .heading2{
     margin-top: 1rem;
-    font-size: 40px;
+    text-align: center;
+    font-size: 30px;
     color: #183B56; 
 }
 
 .Paragraph{
-    font-family: 'Open Sans';
     font-style: normal;
     margin: 1rem auto;
     font-weight: 400;
@@ -184,13 +192,14 @@ hr
 .check{
 
     display: flex;
-    margin: 1rem auto;
-    justify-content: space-around;
-    width: 80%;
+    margin: 2rem auto;
+    justify-content: center;
+   
 }
 .check p{
     display: block;
     font-size: 18px;
+    margin-right: 1rem;
 }
 .check span{
     color: rgb(7, 228, 154);
@@ -199,20 +208,18 @@ hr
     font-size: 18px;
 }
 
-.cardContainer{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around  ;
-    
+
+
+.col_3
+{
+    width: calc(100%/3);
+    padding: 10px 0px;
 }
 .card
 {
-    margin: 0px 16px; 
-    width: 18rem;
-    height: 22rem;
-    padding: 0 32px;
-    margin-top: 2rem;
+     
+    padding: 10px 16px;
+    margin: 0 16px;
     border: 1px solid #b1bccc;
     border-radius: 12px;
 }
@@ -254,21 +261,20 @@ hr
 
 .quote{
 margin-top: 5rem;
-}
-.divBackground{
     background-color: pink;
-    height: 550px;
     border: 2px solid pink;
     border-radius: 0% 0% 60% 60%/0% 0% 20% 20%;
 }
+.col_2{
+    width: 50%;
+    
+}
 .divQuote{
-    width: 37rem;
-    height: 26rem;
+    
     background-color: azure;
-    border: 2px solid azure;
-    border-radius: 25px;
-    margin-left: 8rem;
-    margin-top: 3rem;
+    border: 1px solid azure;
+    border-radius: 25px;    
+    margin: 10px 16px;
     padding: 2rem;
 }
 
@@ -314,17 +320,21 @@ margin-top: 5rem;
 .testimonials{
     margin-top: 3rem;
 }
+.col_4{
+    width: calc(100%/4);
+    padding: 10px 0px;
+}
 .testimonialsCard{
-    width: 20%;
-    margin: 1rem 0rem;
-    padding: 1rem 0.5rem;
+    /* border:1px solid blue; */
+    padding: 10px 0px;
+    margin: 0 16px;
 }
 .star{
     display: flex;
     
 }
 .star img{
-    margin: 1rem 0.1rem;
+    margin: 0.3rem 0.1rem;
     height: 1.3rem;
     width: 1.3rem;
 }
@@ -351,6 +361,7 @@ margin-top: 5rem;
     font-size: 16px;
     color: #5A7184;
     font-weight: 400;
+    ;
 }
 .userName span {
     color: rgb(7, 228, 154);
@@ -367,4 +378,195 @@ margin-top: 5rem;
 }
 .OurTipsImage p{
     padding: 0 2rem;
+}
+.trustpilot
+{
+    margin-top: 5rem
+}
+.trustpilotImage
+{
+    display: flex;
+    justify-content: center;
+}
+.trustpilotImage img{
+
+    width: 3rem;
+    height: 3rem;
+    
+}
+.trustpilotImage p{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color:#183B56
+}
+.trustpilotParagraph p
+{
+    padding: 0rem 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    color: #183B56;
+}
+.contectUs{
+    margin-top: 3rem;
+    background-color: #183B56;
+
+}
+.contectUsHeading h2
+{
+    margin-top: 2rem;
+    font-size: 35px;
+    color: white;   
+}
+.left{
+    margin: 1rem 16px;
+}
+.right{
+    margin: 1rem 16px;
+    padding-left: 2rem;
+}
+.input{
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.input input
+{
+    width: 100%;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 20px;
+}
+.input div{
+    width: 50%;
+}
+.input .button {
+    background-color: #1565D8;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 22px;
+    padding: 0.8rem 1.8rem;
+    margin-left: 3rem;
+}
+.button a{
+    color: white;
+}
+.text{
+    margin-top: 2rem;
+    color: #b1bccc;
+    font-size: 20px;
+    
+}
+.contectUsCard{
+     
+    display: flex;
+    padding: 2rem;
+    align-items:flex-start;
+    border-radius: 10px;
+    position: relative;
+    
+    
+}
+.top{
+   
+    z-index: 1;
+    left: -2rem;
+    top: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+     
+}
+.bottom{
+    z-index: 0;
+    
+    background-color: whitesmoke;
+}
+.contectUsCard .icon 
+{
+    color: #1565D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+ 
+.containe label{
+    color: #183B56;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.containe p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 1rem;
+    color: #5A7184;
+}
+.footer{
+    
+    background-color: #183B56;
+    padding-top: 5rem;
+}
+
+.col_5{
+    width: calc(100%/5);
+}
+.footerCard{
+    margin: 10px 16px;
+  
+    padding:  16px;
+
+}
+
+
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+.socialmedia img{
+    width: 20px;
+    height: 20px;
+}
+.footerCard label{
+    font-size: 24px;
+    font-weight: 700;
+    color: #5A7184;
+}
+
+.footerCard a{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.footerCard li{
+    margin-top: 1.5rem;
+}
+.copyright{
+    text-align: center;
+    margin-top: 3rem;
+}
+.heart{
+    color: white;
+    background-color:#1565D8;
+    display:inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    
+
 }
